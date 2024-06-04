@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family:'vazir';
+    src: url(../fonts/Vazir.woff);
+    src: url(../fonts/Vazir.woff2);
+}
+#menu.hidden {
+    transition: transform 1s ease;
+    transform: translateX(0%);
+    transform: translatey(0%);
+}
+
+#hamburger.close .fa {
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+#hamburger.close .fa::before,
+#hamburger.close .fa::after {
+    top: 0;
+    transform: rotate(-90deg);
+    transition:  1s;
+}

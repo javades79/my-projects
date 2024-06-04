@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/news-img.png">
+    <title>Cactus WebSite</title>
+</head>
+
+<body class=" font-vazir">
+    <header class="w-full">
+        <!-- navbar-size:lg-container -->
+            <nav class="w-full flex justify-center">
+                <div class="w-4/5 px-4 py-4 flex justify-between items-center">
+
+                    <!-- humburger-menu-icon-lg:hidden -->
+                        <div class="lg:hidden">
+                            <button class="navbar-burger flex items-center text-black p-1 scale-100 hover:scale-125 ease-in-out duration-500">
+                                <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Menu</title>
+                                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    <!-- /humburger-menu-icon-lg:hidden -->
+
+                    <!-- right-section-navbar-links -->
+                        <ul class="hidden lg:flex lg:items-center lg:space-x-7">
+                            <!-- logo -->
+                            <li class="ml-8">
+                                <a href="#">
+                                    <img src="../images/Logo.png" alt="logo" class="w-20 h-10 scale-100 hover:scale-125 ease-in-out duration-500">
+                                </a>
+                            </li>
+                            <!-- /logo -->
+                            <li>
+                                <a href="#" class="hover:text-gray-300 duration-100">صفحه اصلی</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="hover:text-gray-300 duration-100">یافتن فایل</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="hover:text-gray-300 duration-100">آپلود کتاب</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="hover:text-gray-300 duration-100">راهنمای دانلود</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="hover:text-gray-300 duration-100">درباره ما</a>
+                            </li>
+                        </ul>
+                    <!-- /right-section-navbar-links -->
+                    
+                    <!-- register button -->
+                        <div class="text-gray-500 inline-block">
+                            <a href="#" class="">
+                                <button type="submit" id="register-btn" class="border border-solid border-gray-300 py-1 px-2 rounded-sm bg-gray-200 hover:bg-gray-50 hover:text-gray-400">ورود / ثبت نام</button>
+                            </a>
+                        </div>
+                    <!-- /register-btn -->
+                
+                </div>
+            </nav>
+        <!-- /navbar-size:lg-container -->
+
+        <!-- page-hamburgur-Menu-list -->
+            <div class="navbar-menu relative z-50 hidden">
+
+                <!-- right-section-navbar-backdrop -->
+                    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-55"></div>
+                <!-- /right-section-navbar-backdrop -->
+
+                <!-- left-section-navbar-container -->
+                    <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm p-6 bg-white border-l overflow-y-auto">
+
+                        <!-- icon-close-menu-&-logo -->
+                            <div>
+                                <div class="flex justify-between items-center mb-5 pb-5 border-b border-b-gray-400">
+
+                                    <!-- logo -->  
+                                        <a class="text-3xl font-bold leading-none" href="#">
+                                            <img src="../images/Logo.png" alt="logo" class="w-20 h-10 scale-100 hover:scale-125 ease-in-out duration-500">
+                                        </a>
+                                    <!-- /logo -->
+
+                                    <!-- btn-close-menu -->
+                                        <button class="navbar-close">
+                                            <svg class="h-9 w-9 cursor-pointer text-black scale-100 hover:scale-125 ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                            </svg>
+                                        </button>
+                                    <!-- /btn-close-menu -->
+
+                                </div>
+                            </div>
+                        <!-- icon-close-menu-&-logo -->
+
+                        <!-- links-section -->
+                            <div>
+                                <ul>
+                                    <li class="mb-1">
+                                        <a href="#" class="block p-4 text-sm font-semibold rounded hover:text-lg hover:text-gray-500 hover:bg-gray-100 duration-100">صفحه اصلی</a>
+                                    </li>
+                                    
+                                    <li class="mb-1">
+                                        <a href="#" class="block p-4 text-sm font-semibold rounded hover:text-lg hover:text-gray-500 hover:bg-gray-100 duration-100">یافتن فایل</a>
+                                    </li>
+                                    
+                                    <li class="mb-1">
+                                        <a href="#" class="block p-4 text-sm font-semibold rounded hover:text-lg hover:text-gray-500 hover:bg-gray-100 duration-100">آپلود کتاب</a>
+                                    </li>
+                                    
+                                    <li class="mb-1">
+                                        <a href="#" class="block p-4 text-sm font-semibold rounded hover:text-lg hover:text-gray-500 hover:bg-gray-100 duration-100">راهنمای دانلود</a>
+                                    </li>
+                                    
+                                    <li class="mb-1">
+                                        <a href="#" class="block p-4 text-sm font-semibold rounded hover:text-lg hover:text-gray-500 hover:bg-gray-100 duration-100">درباره ما</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <!-- /links-section -->
+
+                        <!-- footer-menu-humbergur -->
+                            <div class="flex flex-col w-full border-t border-t-gray-400">
+
+                                <!-- register button -->
+                                <div class="flex justify-center text-gray-500 pt-6">
+                                    <a href="#" class="w-full flex justify-center">
+                                        <button type="submit" id="register-btn" class="w-full block px-4 py-3 mb-2 leading-loose text-xs text-center font-semibold text-white bg-gray-500 hover:bg-gray-700 rounded-xl">ورود / ثبت نام</button>
+                                    </a>
+                                </div>
+                                <!-- /register-btn -->
+
+                                <p class="my-4 text-xs text-center text-gray-400">
+                                    <span>جواد اسماعیلی © 2024</span>
+                                </p>
+
+                            </div>
+                        <!-- /footer-menu-humburgur -->
+
+                    </nav>
+                <!-- /left-section-navbar-container -->
+
+            </div>
+        <!-- /page-hamburgur-Menu-list -->
+
+        <!-- header-text section2 -->
+            <div class="w-full flex justify-center items-center">
+
+                <!-- hedaer-text-container -->
+                    <div class="flex flex-row max-sm:flex-wrap-reverse md:flex-nowrap lg:flex-nowrap justify-around w-4/5 max-sm:p-1 lg:p-14">
+                        
+                        <!-- section-right-text -->
+                            <div class="w-full flex flex-col max-sm:justify-center max-sm:items-center lg:justify-start lg:items-start p-10 space-y-10">
+                                <p class="font-semibold max-sm:text-base max-sm:text-center md:text-xl lg:text-2xl tracking-wide mt-5">کتاب های الکترونیکی خود را با <span class="text-green-500"> کاکتوس </span>به اشتراک بگزارید </p>
+                                <p class="text-gray-500 font-light max-sm:text-center">در کاکتوس میتونی کتابخونه خودت رو بسازی ، کتاب هات رو با دیگران به اشتراک بزاری و یا حتی کتاب های بقیرو به کتابخونت اضافه کنی</p>
+                                <button class="w-28 h-10 text-white rounded bg-green-500 hover:bg-green-400 shadow-2xl scale-100 hover:scale-105 ease-in-out duration-500">بزن بریم</button>
+                            </div>
+                        <!-- /section-right-text -->
+
+                        <!-- section-left-img -->
+                            <div class="w-full flex justify-center items-start">
+                                <img src="../images/vactor-header.png" class="w-fit h-fit" alt="header-image">
+                            </div>
+                        <!-- /section-left-img -->
+
+                    </div>
+                <!-- /hedaer-text-container -->
+
+            </div>
+        <!-- /header-text-section2 -->
+        
+    </header>
+
+    <main class="w-full">
+        <!-- links-section -->
+        <section class="w-full flex justify-center bg-gray-100 bg-no-repeat bg-center bg-cover" style="background-image: url('../images/wave.png')">
+            <!-- link-container -->
+            <div class="w-4/5 grid max-sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 p-2">
+
+                <!-- links -->
+                <a href="#">
+                    <div class="w-full md:h-80 lg:h-full p-8 shadow-2xl bg-white hover:bg-gray-300 rounded-3xl flex flex-col items-center justify-center space-y-5 scale-100 hover:scale-105 ease-in-out duration-500">
+                        <img src="../images/cactos.png" alt="Cactos" class="w-16 h-16">
+                        <p class="text-center font-medium text-2xl">کتابخونه خودت رو بساز</p>
+                        <p class="text-gray-500 font-light text-center">میتونی کتابخونه شخصی خودت رو بسازی و کتاب هات رو اونجا قرار بدی</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="w-full md:h-80 lg:h-full p-8 shadow-2xl bg-white hover:bg-gray-300 rounded-3xl flex flex-col items-center justify-center space-y-5 scale-100 hover:scale-105 ease-in-out duration-500">
+                        <img src="../images/cactos2.png" alt="Cactos2" class="w-16 h-16">
+                        <p class="text-center font-medium text-2xl">کتاب هاتو اینجا آپلود کن</p>
+                        <p class="text-gray-500 font-light text-center">اینجا یک منبع کتاب های الکترونیکیه ، تو هم میتونی کتاب هات رو اینجا بزاری</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="w-full md:h-80 lg:h-full p-8 shadow-2xl bg-white hover:bg-gray-300 rounded-3xl flex flex-col items-center justify-center space-y-5 scale-100 hover:scale-105 ease-in-out duration-500">
+                        <img src="../images/cactos3.png" alt="Cactos3" class="w-16 h-16">
+                        <p class="text-center font-medium text-2xl">هر کتابی میتونی انتخاب کنی</p>
+                        <p class="text-gray-500 font-light text-center">توی کاکتوس  همه نوع کتاب و در هر زمینه ای پیدا میشه فقط کافیه که سرچ کنی</p>
+                    </div>
+                </a>
+                <!-- /links -->
+
+            </div>
+        </section>
+        <!-- /links-section -->
+
+        <!-- Category -->
+        <section class="w-full flex justify-center bg-gray-100 pt-20">
+            <!-- category-container -->
+            <div class="w-4/5 flex flex-col justify-center items-center">
+
+                <!-- text-category -->
+                <div class="w-full flex  max-sm:justify-center sm:justify-center lg:justify-start">
+                    <h1 class="text-gray-500 text-2xl max-sm:text-center font-light block">دسته بندی های کاکتوس</h1>
+                </div>
+                <!-- /text-category -->
+
+                <!-- category-links -->
+                <div class="w-full grid max-sm:grid-cols-2 max-md:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 content-center gap-2 gap-y-5 py-20">
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/history.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">تاریخ</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/auction.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">حقوق</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/science.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">علوم</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/heart.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">کامپیوتر</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/creativity.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">هنری</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/book (1).png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">داستان و رمان</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/ellipsis.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">بیشتر</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/mental.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">روانشناسی</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/worker.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">مدیریت</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/languages.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">آموزش زبان</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/helmet.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">فنی و مهندسی</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="w-full h-full lg:w-48 p-5 flex flex-col justify-center items-center rounded-3xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                            <img src="../images/superhero.png" alt="" class="w-16 h-16">
+                            <p class="mt-5 font-light">کمیک</p>
+                        </div>
+                    </a>
+
+                </div>
+                <!-- /category-links -->
+
+            </div>
+            <!-- /category-container -->
+            
+
+        </section>
+        <!-- /Category -->
+
+        <!-- section3-biographi -->
+        <section class="w-full flex justify-center items-center bg-white">
+            <!-- biographi-container -->
+            <div class="w-4/5 flex max-sm:flex-wrap-reverse md:flex-nowrap lg:flex-nowrap justify-around max-sm:p-1 lg:p-14">
+
+                <!-- section-right-img -->
+                    <div class="w-full flex justify-center items-start">
+                        <img src="../images/biography-img.png" class="w-fit h-fit" alt="biographi-image">
+                    </div>
+                <!-- /section-right-img -->
+
+                <!-- section-left-text -->
+                    <div class="w-full flex flex-col max-sm:justify-center max-sm:items-center lg:justify-start lg:items-start p-5 space-y-10">
+                        <p class="font-semibold max-sm:text-base max-sm:text-center md:text-xl lg:text-4xl tracking-wide mt-5">چرا کاکتوس ؟</p>
+                        <p class="text-gray-500 font-light text-xl max-sm:text-center">کاکتوس شبکه هایی از کتابخونه های کوچیکه اینطوری هر جای دنیا به کتابخونه ی الکترونیک شخصیت دسترسی داری و کلی کتابخونه دیگه  وجود داره که نه تمام pdfهای بدردنخور دنیا بلکه کتاب های جذاب  سلایق دوستای دیگت توشونه و میتونی ازشون استفاده کنی</p>
+                        <div class="space-y-5">
+                            <p class="text-green-500 font-medium text-xl max-sm:text-center">نقشه زیر رو دنبال کن به شبکه کتاب ما وصل شو :</p>
+                            <ul class="space-y-2 font-semibold text-lg max-sm:text-center  marker:text-green-500 marker:text-3xl list-disc list-inside">
+                                <li class="">ثبت نام</li>
+                                <li class="">آپلود کتاب</li>
+                                <li class="">جستجو تو کتاب ها</li>
+                            </ul>
+                        </div>
+                        <button class="w-44 h-10 text-white rounded bg-green-500 hover:bg-green-400 shadow-2xl scale-100 hover:scale-105 ease-in-out duration-500">عضویت در کاکتوس</button>
+                    </div>
+                <!-- /section-left-text -->
+
+            </div>
+            <!-- /biographi-container -->
+
+        </section>
+        <!-- /section3-biographi -->
+
+        <!-- Proposal -->
+        <section class="w-full flex justify-center bg-gray-100 pt-20">
+            <!-- Proposal-container -->
+            <div class="w-4/5 flex flex-col justify-center items-center">
+
+                <!-- text-Proposal -->
+                    <div class="w-full flex max-sm:justify-center sm:justify-center lg:justify-start">
+                        <h1 class="text-gray-500 text-2xl font-light  block">پیشنهاد های کاکتوس</h1>
+                    </div>
+                <!-- /text-Proposal -->
+
+                <!-- proposal-links -->
+                    <div class="w-full grid max-sm:grid-cols-1 max-md:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-3 py-10">
+                        
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-md shadow-2xl p-4">
+                                <img src="../images/NoPath.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-md shadow-2xl p-4">
+                                <img src="../images/NoPath2.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-md shadow-2xl p-4">
+                                <img src="../images/NoPath3.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-md shadow-2xl p-4">
+                                <img src="../images/NoPath4.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-md shadow-2xl p-4">
+                                <img src="../images/NoPath6.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-md shadow-2xl p-4">
+                                <img src="../images/NoPath.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-md shadow-2xl p-4">
+                                <img src="../images/NoPath2.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-xl shadow-2xl p-4">
+                                <img src="../images/NoPath3.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex max-sm:flex-col sm:flex-col lg:flex-row items-center  w-full h-full bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500 rounded-xl shadow-2xl p-4">
+                                <img src="../images/NoPath4.png" alt="" class="w-20 h-full">
+                                <div class="flex flex-col justify-center  max-sm:items-center sm:items-center     lg:items-start mr-2 p-2">
+                                    <p class="font-medium text-xl">انسان خردمند</p>
+                                    <p class="text-gray-500 font-thin">نویسنده : یوهان کراری</p>
+                                    <p class="text-sm font-light">و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می باشد آنها با استفاده از محتویات ساختگی ، صفحه گرافیکی خود را</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                <!-- /proposal-links -->
+
+            </div>
+            <!-- /Proposal-container -->
+
+        </section>
+        <!-- /Proposal -->
+    </main>    
+
+    <footer class="w-full">
+
+        <!-- up-footer-background-wave -->
+            <section class="w-full">
+                <div class="w-full flex justify-center bg-cover bg-no-repeat pt-44 bg-gray-100" style="background-image: url('../images/wave3.png')">
+                </div>
+            </section>
+        <!-- /up-footer-background-wave -->
+
+        <!-- footer-links -->
+            <section class="w-full flex justify-center items-center bg-white">
+
+                <!-- link-container -->
+                    <div class="w-4/5 flex justify-center items-center">
+                        <div class="w-full grid max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 py-20">
+                            
+                            <!-- links -->
+                                <a href="#">
+                                    <div class="w-full h-full p-5 flex flex-col justify-center items-center rounded-xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                                        <img src="../images/icons8-document-64.png" alt="" class="w-16 h-16">
+                                        <p class="text-sky-500 font-medium text-4xl mt-2">984</p>
+                                        <p class="mt-2 font-light text-gray-600 text-2xl">فایل و کتاب</p>
+                                    </div>
+                                </a>
+            
+                                <a href="#">
+                                    <div class="w-full h-full p-5 flex flex-col justify-center items-center rounded-xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                                        <img src="../images/icons8-user-account-100.png" alt="" class="w-16 h-16">
+                                        <p class="text-sky-500 font-medium text-4xl mt-2">984</p>
+                                        <p class="mt-2 font-light text-gray-600 text-2xl">کاربران سایت</p>
+                                    </div>
+                                </a>
+            
+                                <a href="#">
+                                    <div class="w-full h-full p-5 flex flex-col justify-center items-center rounded-xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                                        <img src="../images/icons8-export-pdf-100 (1).png" alt="" class="w-16 h-16">
+                                        <p class="text-sky-500 font-medium text-4xl mt-2">984</p>
+                                        <p class="mt-2 font-light text-gray-600 text-2xl">دانلود ها</p>
+                                    </div>
+                                </a>
+            
+                                <a href="#">
+                                    <div class="w-full h-full p-5 flex flex-col justify-center items-center rounded-xl shadow-2xl bg-white hover:bg-gray-300 scale-100 hover:scale-105 ease-in-out duration-500">
+                                        <img src="../images/icons8-speech-bubble-100.png" alt="" class="w-16 h-16">
+                                        <p class="text-sky-500 font-medium text-4xl mt-2">984</p>
+                                        <p class="mt-2 font-light text-gray-600 text-2xl">نقد و بررسی</p>
+                                    </div>
+                                </a>
+                            <!-- /links -->
+
+                        </div>
+                    </div>
+                <!-- /link-container -->
+
+            </section>
+        <!-- /footer-links -->
+
+        <!-- subscribe-newsletter -->
+            <section class="w-full flex justify-center bg-gray-100 bg-no-repeat bg-center bg-cover" style="background-image: url('../images/wave4.png')">
+               
+                <!-- news-container -->
+                    <div class="max-sm:w-4/5 sm:w-4/5 lg:w-3/5 flex justify-center  max-sm:flex-col sm:flex-col lg:flex-row items-center mt-10 p-10 rounded-2xl shadow-2xl bg-white duration-500 mb-12">
+
+                        <!-- right-section-img -->
+                        <div class="w-fit">
+                            <img src="../images/news-img.png" alt="news-img" class="w-52 h-full">
+                        </div>
+                        <!-- /right-section-img -->
+
+                        <!-- left-section -->
+                        <div class="w-full flex items-center bg-white ">
+                            <div class="flex flex-col justify-center bg-white  max-sm:items-center sm:items-center lg:items-start mr-2 p-2 space-y-5">
+                                <p class="font-medium text-3xl max-sm:text-center sm:text-center lg:text-right">عضویت در خبرنامه</p>
+                                <p class="text-gray-400 font-thin text-lg max-sm:text-center sm:text-center lg:text-right">در اینجا ایمیل خودت رو وارد کن و با استفاده از خبرنامه میتونی از قرار گرفتن کتاب ها جدید مورد علاقتون با خبر بشی .</p>
+                                <form action="#" class="flex justify-center items-center max-sm:flex-col sm:flex-col lg:flex-row">
+                                    <input type="email" name="" id=""  placeholder="ایمیل خود را وارد کنید" class="max-sm:w-full sm:w-full lg:w-fit h-10 placeholder:text-center bg-white shadow-2xl rounded border-2 border-gray-200 focus:bg-gray-300  p-4 max-sm:pl-1 sm:pl-1 lg:pl-36">
+                                    <input type="submit" value="عضویت در خبرنامه" class="w-fit h-10  bg-green-500 text-white p-2 max-sm:px-1 sm:px-1 lg:px-8 rounded-md shadow-2xl hover:bg-green-400 max-sm:mt-3 sm:mt-3 lg:mt-0 max-sm:mr-0 sm:mr-0 lg:mr-3 active:bg-green-600 cursor-pointer">
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /left-section -->
+
+                    </div>
+                <!-- /news-container -->
+
+            </section>
+        <!-- /subscribe-newsletter -->
+
+        <!-- section-text-copyright -->
+            <section class="copyright">
+                <div class="w-full bg-white p-5">
+                    <h1 class="text-center text-gray-500 font-light text-xl"><span class="text-red-500">توجه : </span>این پروژه به صورت آزاد و اوپن سورس بوده و هر گونه استفاده تجاری از آن دور از اخلاق و پیگرد قانونی دارد و برای توسعه آن به <span class="text-sky-500"> گیت هاب </span>مراجعه کنید</h1>
+                </div>
+            </section>
+        <!-- /section-text-copyright -->
+    </footer>
+
+    <script src="./main.js">
+
+    </script>
+</body>
+
+</html>
